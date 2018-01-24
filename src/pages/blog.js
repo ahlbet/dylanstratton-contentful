@@ -7,7 +7,7 @@ const Blog = ({ data }) => (
     <ul>
       {data.allContentfulPost.edges.map(post => (
         <li key={post.node.id}>
-          <Link to={`/blog/${post.node.title.replace(/\s+/g, '-')}`}>
+          <Link to={`/blog/${post.node.title.replace(/\s+/g, '-')}/`}>
             {post.node.title}
           </Link>
         </li>
