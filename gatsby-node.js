@@ -10,6 +10,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
         edges {
           node {
             id
+            title
           }
         }
       }
@@ -21,7 +22,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 
     res.data.allContentfulPost.edges.forEach(({ node }) => {
       createPage({
-        path: `/blog/${node.id}`,
+        path: `/blog/${node.title.replace(/\s+/g, '-')}`,
         component: postTemplate,
         context: {
           id: node.id

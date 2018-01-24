@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
-// import Img from 'gatsby-image';
 import PropTypes from 'prop-types';
 
 const propTypes = {
