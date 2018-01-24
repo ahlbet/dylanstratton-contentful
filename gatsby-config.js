@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 module.exports = {
   siteMetadata: {
     title: 'Gatsby Default Starter'
@@ -6,8 +8,8 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: `dzgczwgd9ycy`,
-        accessToken: `c0d9ab59b93ddcb4287f3a9728c0a44fbf6fc8a3b9da3b85cd380ca66d554796`
+        spaceId: process.env.CONTENTFUL_SPACE_ID || '',
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN || ''
       }
     },
     'gatsby-plugin-react-helmet',
