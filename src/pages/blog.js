@@ -20,7 +20,7 @@ const Blog = ({ data }) => (
 
 export const pageQuery = graphql`
   query IndexQuery {
-    allContentfulPost {
+    allContentfulPost(sort: { order: DESC, fields: [date] }) {
       edges {
         node {
           id
