@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
+import ReactAudioPlayer from 'react-audio-player';
 
 const propTypes = {
   data: PropTypes.object
@@ -10,12 +11,19 @@ const propTypes = {
 class Template extends React.Component {
   render() {
     const post = this.props.data.contentfulPost;
-    const { title, date, content } = post;
+    const { title, date, content, audio } = post;
 
     return (
       <div>
         <h1>{title}</h1>
         <p>{date}</p>
+        {audio ? (
+          <div>
+            <ReactAudioPlayer src={audio.file.url} controls />
+          </div>
+        ) : (
+          <div>No audio</div>
+        )}
         <div
           dangerouslySetInnerHTML={{ __html: content.childMarkdownRemark.html }}
         />
@@ -35,6 +43,13 @@ export const postQuery = graphql`
       content {
         childMarkdownRemark {
           html
+        }
+      }
+      audio {
+        file {
+          url
+          fileName
+          contentType
         }
       }
     }
