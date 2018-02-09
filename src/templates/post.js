@@ -52,7 +52,12 @@ class Template extends React.Component {
         <div
           dangerouslySetInnerHTML={{ __html: content.childMarkdownRemark.html }}
         />
-        <div className="audio-player" dangerouslySetInnerHTML={{ __html: soundcloudLink.soundcloudLink }} />
+        {soundcloudLink ? (
+          <div className="audio-player" dangerouslySetInnerHTML={{ __html: soundcloudLink.soundcloudLink }} />
+        ) : (
+          <div>No audio</div>
+        )
+        }
         <Link to="/blog/">Back to blog</Link>
       </div>
     );
