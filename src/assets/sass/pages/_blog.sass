@@ -1,0 +1,40 @@
+.blog
+  // width: 60%
+  // margin: 0 auto
+
+  &__heading
+    padding: 10rem 0
+
+    &--header
+      font-size: 5rem
+      text-transform: uppercase
+
+    &--links
+      font-size: $default-font-size
+
+      &-home, 
+      &-gallery
+        margin: 0 1rem  
+        &:link,
+        &:visited
+        text-decoration: none
+        color: $color-primary
+
+        &:hover,
+        &:active
+          color: rgba($color-primary, 0.8)
+
+  &__list
+
+    &--item
+      font-size: $default-font-size
+
+      &-link
+        &:link,
+        &:visited
+        text-decoration: none
+        color: $color-tertiary-dark
+
+        &:hover,
+        &:active
+          color: rgba($color-tertiary-dark, 0.8)        
