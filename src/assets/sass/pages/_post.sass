@@ -1,0 +1,31 @@
+.post
+  width: 60%
+  margin: 7rem auto 0
+
+  @include respond(tab-port)
+    width: 90%
+
+  &__title
+    font-size: 5rem
+    @include respond(tab-port)
+      font-size: 4rem
+
+  &__date
+    font-size: $default-font-size  
+
+  &__content
+    font-size: $default-font-size  
+
+  &__content p
+    margin-bottom: 1rem
+
+  &__link
+    font-size: $default-font-size
+    &:link,
+    &:visited
+    text-decoration: none
+    color: $color-tertiary-dark
+
+    &:hover,
+    &:active
+      color: rgba($color-tertiary-dark, 0.8)     

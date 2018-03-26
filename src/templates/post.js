@@ -14,13 +14,12 @@ class Template extends React.Component {
 
     return (
       <div className="post">
-        <h1>{title}</h1>
-        <p>{date}</p>
-        <div
+        <h1 className="post__title">{title}</h1>
+        <p className="post__date">{date}</p>
+        <div className="post__content"
           dangerouslySetInnerHTML={{ __html: content.childMarkdownRemark.html }}
         />
-        }
-        <Link to="/blog/">Back to blog</Link>
+        <Link className="post__link" to="/blog/">Back to blog</Link>
       </div>
     );
   }
