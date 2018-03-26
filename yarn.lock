@@ -3214,7 +3214,7 @@ function-bind@^1.0.2:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
 
-gatsby-1-config-css-modules@^1.0.10:
+gatsby-1-config-css-modules@^1.0.11:
   version "1.0.11"
   resolved "https://registry.yarnpkg.com/gatsby-1-config-css-modules/-/gatsby-1-config-css-modules-1.0.11.tgz#5a102c6b11f9a6963b3892ecc959511e1688e525"
   dependencies:
@@ -3263,22 +3263,21 @@ gatsby-module-loader@^1.0.9:
     babel-runtime "^6.26.0"
     loader-utils "^0.2.16"
 
+gatsby-plugin-postcss-sass@^1.0.19:
+  version "1.0.19"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-postcss-sass/-/gatsby-plugin-postcss-sass-1.0.19.tgz#0effb0bf9c26ab0d63ba8a3bdd35c6c3114ba5c4"
+  dependencies:
+    babel-runtime "^6.26.0"
+    extract-text-webpack-plugin "^1.0.1"
+    gatsby-1-config-css-modules "^1.0.11"
+    node-sass "^4.5.2"
+    sass-loader "^4.1.1"
+
 gatsby-plugin-react-helmet@^2.0.3:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-2.0.4.tgz#330bd5c2052411b7e4dd8f74e9a57b44ff2ed1ea"
   dependencies:
     babel-runtime "^6.26.0"
-
-gatsby-plugin-sass@1.0.19:
-  version "1.0.19"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sass/-/gatsby-plugin-sass-1.0.19.tgz#f4e146bc57ae35ad01fcb2b8a45ff17ac47de5ff"
-  dependencies:
-    babel-runtime "^6.26.0"
-    extract-text-webpack-plugin "^1.0.1"
-    gatsby-1-config-css-modules "^1.0.10"
-    node-sass "^4.5.2"
-    sass-loader "^4.1.1"
-    webpack "^1.13.3"
 
 gatsby-react-router-scroll@^1.0.8:
   version "1.0.8"
