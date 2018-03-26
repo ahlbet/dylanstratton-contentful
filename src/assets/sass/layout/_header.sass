@@ -9,3 +9,21 @@
     @include absCenter
     text-align: center
     width: 100%
+
+  &__link
+    font-size: 3rem
+    font-weight: 300
+    text-transform: uppercase
+    padding: 1rem 2.5rem
+    border: 2px solid $color-black
+    border-radius: 0.5rem
+    transition: all 0.2s ease-in-out 
+    &:link,
+    &:visited
+    text-decoration: none
+    color: $color-black
+
+    &:hover,
+    &:active
+      background: $color-black
+      color: rgba($color-white, 0.8)         

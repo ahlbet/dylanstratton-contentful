@@ -11,6 +11,7 @@ const Header = () => (
           <span className="heading-primary--main">Dylan Stratton</span>
           <span className="heading-primary--sub">Web Developer</span>
         </h1>
+        <Link className="header__link" to="/blog">Blog</Link>
       </div>
     </header>
   </div>
