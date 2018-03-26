@@ -45,7 +45,7 @@ const SecondPage = () => (
 
     <div className="row">
       <img className="col-1-of-2" src={gallery7} />
-      <img className="col-1-of-2" src={gallery8} />
+      <img className="col-1-of-2" src={gallery11} />
     </div>
 
     <div className="row">
@@ -53,10 +53,10 @@ const SecondPage = () => (
       <img className="col-1-of-2" src={gallery10} />
     </div>
 
-    <div className="row">
-      <img className="col-1-of-2" src={gallery11} />
-      <img className="col-1-of-2" src={gallery2} />
-    </div>
+    {/* <div className="row"> */}
+    {/* <img className="col-1-of-2" src={gallery11} /> */}
+    {/* <img className="col-1-of-2" src={gallery2} /> */}
+    {/* </div> */}
 
     <Footer />
   </div>
