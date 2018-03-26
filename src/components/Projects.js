@@ -12,7 +12,7 @@ const Projects = () => (
       Projects
     </h2>
 
-    <div className="row">
+    <div className="projects__list row">
       <div className="col-1-of-3 projects__project">
         <a href="http://theatre-code.netlify.com/">
           <img className="projects__image" src={theatreCode} alt="Theatre and Code" />

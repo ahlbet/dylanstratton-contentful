@@ -10,19 +10,23 @@
   padding: 5rem 0
 
   @include respond(tab-port)
-    max-width: 75rem
     padding: 0 3rem
 
   &__heading
+    margin: 0 auto
+    width: 90%
     text-transform: uppercase
     font-size: 6rem
     font-weight: 300
+    
+    @include respond(tab-port)
+      text-align: center
+
   &__text
     font-size: $default-font-size
     width: 90%
+    margin: 0 auto
 
-    @include respond(tab-port)
-      width: 100%
 
 .projects
   color: $color-grey-dark-3
@@ -34,11 +38,15 @@
     text-transform: uppercase
     font-size: 6rem
     font-weight: 300
+    width: 90%
     margin: 0 auto
-
     @include respond(tab-port)
-      max-width: 75rem
+      text-align: center
       padding: 0 3rem
+      
+  &__list
+    margin: 0 auto
+    width: 90%    
 
   &__image
     width: 100%
@@ -65,19 +73,21 @@
 
   @include respond(tab-port)
     max-width: 75rem
-    padding: 0 3rem
+    padding: 0 3rem 5rem
 
   &__heading
     text-transform: uppercase
     font-size: 6rem
     font-weight: 300
     margin: 0 auto
+    width: 90%
 
     @include respond(tab-port)
-      max-width: 75rem
+      text-align: center
 
   &__text
     font-size: $default-font-size
+    margin: 0 auto
     width: 90%
 
     @include respond(tab-port)
