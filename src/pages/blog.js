@@ -29,16 +29,6 @@ export const pageQuery = graphql`
           content {
             content
           }
-          audio {
-            file {
-              url
-              fileName
-              contentType
-            }
-          }
-          soundcloudLink {
-            soundcloudLink
-          }
         }
       }
     }
