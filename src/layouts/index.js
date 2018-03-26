@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 
 import Header from '../components/Header';
-import './index.scss';
+// import './index.scss';
 import '../assets/sass/main.sass';
 
 const TemplateWrapper = ({ children }) => (
@@ -18,7 +18,6 @@ const TemplateWrapper = ({ children }) => (
         { name: 'keywords', content: 'web, developer' }
       ]}
     />
-    {/* <Header /> */}
     <div>{children()}</div>
   </div>
 );
