@@ -6,7 +6,7 @@ import Header from '../components/Header';
 import './index.scss';
 // import '../assets/sass/main.sass';
 
-import favicon from '../assets/img/Vector.png';
+import favicon from '../assets/img/fav.png';
 
 const TemplateWrapper = ({ children }) => (
   <div>
