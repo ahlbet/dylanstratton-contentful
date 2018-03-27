@@ -6,18 +6,16 @@ import Header from '../components/Header';
 import './index.scss';
 // import '../assets/sass/main.sass';
 
+import favicon from '../assets/img/Vector.png';
+
 const TemplateWrapper = ({ children }) => (
   <div>
-    <Helmet
-      title="Dylan Stratton | Web Developer"
-      meta={[
-        {
-          name: 'description',
-          content: 'Portfolio site and blog maintained by Dylan Stratton'
-        },
-        { name: 'keywords', content: 'web, developer' }
-      ]}
-    />
+    <Helmet>
+      <title>Dylan Stratton | Web Developer</title>
+      <meta name='description' content='Portfolio site and blog maintained by Dylan Stratton' />
+      <meta name='keywords' content='web, developer' />
+      <link rel="shortcut icon" href={favicon} type="favicon.ico" />
+    </Helmet>
     <div>{children()}</div>
   </div>
 );
