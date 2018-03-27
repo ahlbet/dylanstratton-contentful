@@ -2,20 +2,26 @@
 
   &__heading
     padding: 10rem 0
+    margin-bottom: 5rem
+    background-image: url( ../assets/img/hell3.jpg )
+    background-size: cover
+    background-position: center
 
     @include respond(tab-port)
       padding: 5rem 0
 
     &--header
-      font-size: 5rem
+      font-size: 6rem
+      color: $color-white
+      font-weight: 300
       text-transform: uppercase
 
     &--links
-      font-size: $default-font-size
+      font-size: 2rem
 
       &-home, 
       &-gallery
-        margin: 0 1rem  
+        margin: 0 2rem  
         &:link,
         &:visited
         text-decoration: none
