@@ -15,6 +15,8 @@ import gallery9 from "../assets/img/gallery9.png";
 import gallery10 from "../assets/img/gallery10.png";
 import gallery11 from "../assets/img/gallery11.jpg";
 import gallery12 from "../assets/img/gallery12.png";
+import gallery13 from "../assets/img/gallery13.png";
+import gallery14 from "../assets/img/gallery14.jpg";
 
 const SecondPage = () => (
   <div>
@@ -26,6 +28,11 @@ const SecondPage = () => (
         <Link className="gallery__heading--links-home" to="/">Home</Link>
         <Link className="gallery__heading--links-blog" to="blog">Blog</Link>
       </div>
+    </div>
+
+    <div className="row">
+      <img className="col-1-of-2" src={gallery14} />
+      <img className="col-1-of-2" src={gallery13} />
     </div>
 
     <div className="row">
