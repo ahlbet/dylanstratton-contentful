@@ -13,7 +13,7 @@ import heaven from '../assets/img/heavenyo.jpg';
 const IndexPage = () => (
   <div>
     <Header />
-    <Circles />
+    {/* <Circles /> */}
     <About />
     <Projects />
     <Contact />
