@@ -1,6 +1,7 @@
 'use strict';
 
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Contact = () => (
   <section id="contact" className="contact">
@@ -16,7 +17,12 @@ const Contact = () => (
         <a className="contact__link" href="http://ahlbet.weebly.com/"> ahlbet.weebly.com</a> or at
         <a className="contact__link" href="http://www.callosummagazine.com/mag/2016/9/27/gif-art-and-image-processing-by-dylan-stratton?rq=dylan%20stratton"> callosummagazine.com</a>. Email is the best way to reach me.</p>
 
-      <a href="mailto:dm.stratton94@gmail.com" className="contact__email">dm.stratton94@gmail.com</a>
+      <div className="contact__links">
+        <a href="mailto:dm.stratton94@gmail.com" className="contact__email">dm.stratton94@gmail.com</a>
+        <a href="https://github.com/ahlbet" className="contact__link"><FontAwesomeIcon icon={["fab", "github"]} size="lg" /></a>
+        <a href="https://twitter.com/ahlbetdud" className="contact__link"><FontAwesomeIcon icon={["fab", "twitter"]} size="lg" /></a>
+        <a href="https://www.linkedin.com/in/dylan-stratton/" className="contact__link"><FontAwesomeIcon icon={["fab", "linkedin"]} size="lg" /></a>
+      </div>
     </div>
   </section>
 );
