@@ -8,6 +8,7 @@ import skrine from '../assets/img/skrine.png';
 import gallery12 from '../assets/img/gallery12.png';
 import repeat from '../assets/img/repeat1.png';
 import tripWe from '../assets/img/tripWe.png';
+import offbook from '../assets/img/offbook.png';
 
 const Projects = () => (
   <section id="projects" className="projects">
@@ -45,6 +46,22 @@ const Projects = () => (
           <div className="projects__links">
             <a href="https://compassionate-edison-98c1f8.netlify.com/" className="projects__link">Demo</a>
             <a href="https://github.com/thinkful-ei19/Chris-Dylan-SRP-client" className="projects__link">
+              <FontAwesomeIcon icon={["fab", "github"]} size='lg' />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="col-1-of-1 projects__project">
+        <a href="https://vibrant-booth-ddde82.netlify.com/">
+          <img className="projects__image" src={offbook} alt="Offbook" />
+        </a>
+        <div className="projects__description">
+          <p>Offbook was my first solo capstone project for Thinkful. It was the first time I really got my hands dirty with React and Redux. Offbook is an application that allows actors to keep a record of their monologues. They can also take staging notes or write comments on each monologue. Working on Offbook really help me dig deep with understanding state in web applications.</p>
+          <p>Technologies used: <strong>React</strong>, <strong>MongoDB</strong>, <strong>Node</strong>, <strong>Sass</strong> and <strong>Netlify</strong> and <strong>Netlify / Heroku</strong> for hosting.</p>
+          <div className="projects__links">
+            <a href="https://vibrant-booth-ddde82.netlify.com/" className="projects__link">Demo</a>
+            <a href="https://github.com/thinkful-ei19/dylan-offbook-client" className="projects__link">
               <FontAwesomeIcon icon={["fab", "github"]} size='lg' />
             </a>
           </div>
