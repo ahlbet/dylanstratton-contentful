@@ -1,16 +1,10 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import Helmet from 'react-helmet';
-import PropTypes from 'prop-types';
-
-const propTypes = {
-  data: PropTypes.object
-};
 
 class Template extends React.Component {
   render() {
     const post = this.props.data.contentfulPost;
-    const { id, title, date, content } = post;
+    const { title, date, content } = post;
 
     return (
       <div className="post">

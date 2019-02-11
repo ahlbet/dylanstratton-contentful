@@ -1,20 +1,15 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-
-import Header from '../components/Header';
-import './index.scss';
-// import '../assets/sass/main.sass';
-
 import favicon from '../assets/img/fav.png';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { fab } from '@fortawesome/free-brands-svg-icons';
+
+import '../assets/sass/main.sass';
 
 library.add(fab);
 
-const TemplateWrapper = ({ children }) => (
+const Layout = ({ children }) => (
   <div>
     <Helmet>
       <title>Dylan Stratton | Web Developer</title>
@@ -22,12 +17,8 @@ const TemplateWrapper = ({ children }) => (
       <meta name='keywords' content='web, developer' />
       <link rel="shortcut icon" href={favicon} type="favicon.ico" />
     </Helmet>
-    <div>{children()}</div>
+    <div>{children}</div>
   </div>
 );
 
-TemplateWrapper.propTypes = {
-  children: PropTypes.func
-};
-
-export default TemplateWrapper;
+export default Layout;

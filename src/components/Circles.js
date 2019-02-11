@@ -1,5 +1,3 @@
-'use strict';
-
 import React from 'react';
 import circle1 from '../assets/img/4circles2.png';
 import circle2 from '../assets/img/4circles3.png';

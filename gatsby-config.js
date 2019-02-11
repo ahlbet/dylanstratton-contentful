@@ -14,7 +14,7 @@ module.exports = {
     },
     'gatsby-plugin-react-helmet',
     `gatsby-transformer-remark`,
-    `gatsby-plugin-postcss-sass`,
+    `gatsby-plugin-sass`,
     `gatsby-plugin-netlify`
   ]
 };
