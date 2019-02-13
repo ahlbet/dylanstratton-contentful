@@ -3,10 +3,6 @@ import Img from 'gatsby-image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default class Project extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   renderTechnologies = () => {
     const { technologies } = this.props;
     return technologies.map((t, i) => {
