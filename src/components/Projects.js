@@ -11,7 +11,7 @@ export default class Projects extends Component {
     super(props)
   }
 
-  renderProjects = () => {
+  renderProjects = (data) => {
     return projectData.map((p, i) => {
       return (
         <Project
@@ -20,6 +20,8 @@ export default class Projects extends Component {
           technologies={p.technologies}
           githubLink={p.githubLink}
           description={p.description}
+          data={data}
+          imgName={p.imgName}
         />
       )
     })
@@ -54,9 +56,7 @@ export default class Projects extends Component {
             </h2>
 
             <div className="projects__list row">
-
-              {this.renderProjects}
-
+              {this.renderProjects(data)}
               <div className="col-1-of-1 projects__project">
                 <Link to="/gallery">
                   <Img className="projects__image" fixed={data.gallery12.childImageSharp.fixed} />
