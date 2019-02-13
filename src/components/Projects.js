@@ -6,11 +6,6 @@ import projectData from "../components/Projects/projectData";
 import Project from "../components/Projects/Project";
 
 export default class Projects extends Component {
-
-  constructor(props) {
-    super(props)
-  }
-
   renderProjects = (data) => {
     return projectData.map((p, i) => {
       return (
